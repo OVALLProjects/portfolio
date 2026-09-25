@@ -6,21 +6,74 @@
 
 ---
 
-Four projects in the last year and a half, alone, in four different technical areas —
-specification, architecture, implementation. One runs on a **live trading account** every day,
-one starts translating **before the speaker finishes the sentence**, one replaces a face on a
-live stream in **~100 ms**, and one puts **18 models** behind a single chat window. All four are
-finished and working.
+# Four products. Three weeks. One person.
 
-Every clip and screenshot here comes from the running application. Each section below gives the
-decision that made the thing work, and what that decision bought.
+About a year of learning, in which I released nothing. Then September 2026: a desktop trading
+journal, a real-time speech-to-speech interpreter, a C++ face-replacement pipeline on the GPU,
+and a Telegram assistant with **18 models** behind one chat window. Four technical areas, none of
+which I had worked in before I started.
+
+That rate is what I am offering. I take on volume and several things at once, I get into an
+unfamiliar field quickly, and I take a product from a vague requirement to something a person can
+open. All four are finished and working — every clip and screenshot here comes from the running
+application.
 
 | | |
 |---|---|
-| **4** | finished products, all of them working |
-| **565** | automated tests across two of them |
-| **18** | AI models behind one chat window |
-| **275 ms** | fastest measured speech-to-speech |
+| **565** | automated tests I wrote across two of them |
+| **275 ms** | measured speech-to-speech, entirely on this machine |
+| **~100 ms** | camera to stream, five networks per frame |
+| **13.6 MB** | the whole journal — one file, nothing installed |
+
+---
+
+## What I bring
+
+**Four technical areas. None of them familiar when I started.** A desktop application, a real-time
+GPU pipeline, local speech AI and a service over eighteen model providers share no code and barely
+any vocabulary. I had not written C++, touched CUDA or worked with speech models before this year.
+What carries between them is how a product gets decided, built and checked — and that is the part
+that transfers to whatever you are building.
+
+- **I learn a field by releasing something in it.** Every one of these four was a field I entered
+  by building a finished thing in it, not by reading about it first. Thirty-three milliseconds per
+  frame teaches you more about GPU pipelines in a week than a course does in a term, because the
+  deadline is real and the thing either runs at thirty frames a second or it does not. Hand me a
+  domain I have never touched and the answer is the same shape: a specification in days, something
+  openable in weeks.
+- **What I want is volume.** Four products in three weeks is the rate I like working at, and the
+  rate I am looking to keep: several things moving at once, decisions made quickly and revisited
+  when the measurement says so. I would rather own an outcome end to end — what it must do, how it
+  is built, whether it is good enough to release — than work through a queue of tickets someone
+  else has cut.
+- **It starts as a specification.** What the thing must do, who is holding it, and what would make
+  it useless — written down before any architecture exists. The arguments that otherwise arrive in
+  week six happen on page one, when changing your mind is free. Then the architecture answers one
+  constraint: 33 ms a frame, a trader who will not install a runtime, a streamer with no spare
+  monitor. I find the one that actually binds and build outward from it.
+- **Numbers come from measurement.** Latency is broken down by stage and displayed while the thing
+  runs. Accuracy is read off material the rules were never written against — which is why the
+  interpreter is quoted at 97% and not at the higher figure from its own tuning set. Any number I
+  cannot reproduce on demand does not go into this repository or into a conversation.
+- **The implementation is written with an AI coding tool.** I set the requirements, decide how the
+  product behaves, make the architecture calls and test every build against real use; the code is
+  written alongside an AI assistant. That is why one person covers four technical areas at this
+  pace, and it is the same leverage I would bring to a team.
+
+**What is here, and what is not.** The repositories stay private: this is the evidence, not the
+source. I will walk through any part of the code on a call, run any of it live in front of you, or
+send a specific module across.
+
+---
+
+## Skills
+
+| | |
+|---|---|
+| **Languages and platforms** | Python · asyncio · C++17 · CMake · SQL · HTML/CSS/JS · PowerShell · Git · REST APIs · Windows desktop · Linux · Docker |
+| **AI in a running product** | 18 LLM providers · intent routing · prompt engineering · Whisper large-v3-turbo · ONNX Runtime · CUDA · cuDNN · Piper · Kokoro TTS · Argos MT · quality layers over model output |
+| **Systems and delivery** | PostgreSQL · Alembic · SQLite · aiogram · Docker Compose · layered architecture · Direct3D 11 · Media Foundation · WebView2 · single-file builds |
+| **Product work** | Specification · architecture under one constraint · latency measurement · automated testing · unit economics · EN/RU/UA interfaces · release and acceptance |
 
 ---
 
@@ -40,11 +93,9 @@ from that instrument's tick value and commission. *What it gave:* change the con
 position size and the whole history recalculates itself. A spreadsheet keeps showing the old
 figures and never mentions it.
 
-**The decision — one file, nothing installed.** The interface is HTML drawn by WebView2, which
-Windows already has; underneath it is the Python standard library and SQLite, with no framework
-and no third-party package. *What it gave:* the journal ships as a single 13.6 MB executable that
-opens on a machine with nothing prepared, and there is no dependency to repair a year later.
-
+- One file — `TradeJournal.exe` at 13.6 MB. HTML drawn by WebView2, which Windows already has,
+  over the Python standard library and SQLite: no framework, no third-party package, no installer,
+  and no dependency to repair a year later
 - 16 futures contracts preloaded with tick value and per-contract commission
 - Nothing leaves the machine: `trades.db` sits next to the app, a backup is a file copy
 - Interface in English and Russian, session-aware time zones
@@ -74,13 +125,10 @@ a pause, and a finished piece enters recognition while the next one is still bei
 because only the tail is still in flight. A system that waits for the full utterance pays for all
 of it.
 
-**The decision — a second pass over the translation.** Raw machine translation was right about
-70% of the time on my test material. Behind it sits a quality layer: a glossary of terms that
-must not drift, corrections for the constructions the model reliably breaks, and a check that
-what came out is a usable sentence at all. *What it gave:* **97%** on a held-out set the rules
-were never written against — the figure worth quoting, rather than the higher one from the
-material they were tuned on.
-
+- A quality layer over raw machine translation — a glossary that must not drift, corrections for
+  the constructions the model reliably breaks, a check that the output is a usable sentence at
+  all: **70% → 97%** on a held-out set the rules were never written against
+- Push-to-talk, mute and an echo guard, so it survives a real conversation
 - Appears as an ordinary microphone inside Zoom, Discord and Meet
 - No cloud, no account, no per-minute bill
 - 253 automated tests
@@ -112,12 +160,9 @@ CPU between stages; each stage reports its own milliseconds on screen. *What it 
 from camera to stream — three frames at 30 fps — and a slow frame with a name rather than a
 shrug.
 
-**The decision — cut along the face, not along an ellipse.** The generated face is blended
-through the parsing map computed for that same frame, so hair, glasses and a hand crossing the
-cheek stay where they are, and the original mouth and eyes can be kept untouched. *What it gave:*
-lip-sync stays exact, because the mouth on screen is the real one — the detail that gives a swap
-away before anything else does.
-
+- Blended through the face-parsing map computed for that same frame, not through an ellipse: hair,
+  glasses and a hand crossing the cheek stay where they are, and the real mouth can be kept, so
+  lip-sync stays exact — the detail that gives a swap away before anything else does
 - 5 ONNX models, about 770 MB, resident on the GPU
 - Per-stage latency shown live: network, generator, landmarks, mask, compositing
 
@@ -152,11 +197,10 @@ built. This one runs on the providers' paid APIs. *What it gave:* a service that
 week a provider tightens enforcement, instead of one that disappears along with the account it
 was riding on.
 
-**The decision — four layers, so a change lands in one.** Telegram, business logic, providers and
-storage are separate, with the boundaries held to. *What it gave:* a new model is a change in the
-provider layer, a new interface language a change in presentation, and eighteen providers
-accumulated over time without the code turning into a knot.
-
+- Four layers — Telegram, business logic, providers, storage — so a new model is a change in one
+  place, a new interface language another, and the tariff arithmetic has a test suite of its own.
+  Eighteen providers accumulated over time without the code turning into a knot
+- A platform with no key never appears in the menu, instead of appearing and failing when pressed
 - Produces real `.pptx` decks and `.docx` papers in 11 regional formatting standards
 - Builds trading indicators for 7 platforms, compiling `.jar` studies server-side
 - **312 tests**, one suite dedicated purely to pricing mistakes that cost money
@@ -168,52 +212,17 @@ accumulated over time without the code turning into a knot.
 
 ---
 
-## How I work
-
-A desktop application, a real-time GPU pipeline, local speech AI and a service over eighteen
-model providers share no code and barely any vocabulary. What they do share is how each one got
-decided, built and checked — and that is the part that transfers to whatever a company happens to
-be building.
-
-- **It starts as a specification.** What the thing must do, who is holding it, and what would
-  make it useless — written down before any architecture exists. The arguments that otherwise
-  arrive in week six happen on page one, when changing your mind is free.
-- **The architecture answers one constraint.** Each product has a single constraint that decides
-  its shape: 33 ms per frame, a trader who will not install a runtime, a streamer with no spare
-  monitor for the output window. I find the one that actually binds and build outward from it.
-- **Numbers come from measurement.** Latency is broken down by stage and displayed while the
-  thing runs; accuracy is read off material the rules never saw. Any figure I cannot reproduce on
-  demand does not go into this repository or into a conversation.
-- **Failure is named, not hidden.** A feature that cannot work is shown disabled with the reason
-  beside it. When a camera hands over the wrong pixel format the application says so, rather than
-  leaving someone with a bad frame rate and a guess.
-- **The implementation is written with an AI coding tool.** I set the requirements, decide how the
-  product behaves, make the architecture calls and test every build against real use; the code is
-  written alongside an AI assistant. That is the reason one person covers four technical areas in
-  eighteen months, and it is the same leverage I would bring to a team.
-
-**What is here, and what is not.** The repositories stay private: this is the evidence, not the
-source. I will walk through any part of the code on a call, run any of it live in front of you,
-or send a specific module across.
-
----
-
 ## What comes next
 
-A project reaches this page once it is finished and working, so the page fills up slowly and
-everything on it is complete. The work did not stop at four.
+A product reaches this page once it is finished and working, so the page fills up slowly and
+nothing on it is an announcement. All four keep developing after release: the journal gains a
+breakdown when a month of trading asks for one, the bot gains models as providers publish them,
+the mask is moving from window capture to a proper virtual camera. More are being built right now,
+and they arrive here on the same terms — finished, measured, working.
 
-- **Finished, working, and still developing.** All four are built, tested and working — the
-  journal on a live trading account every trading day. Each keeps developing after release: the
-  journal gains a breakdown when a month of trading asks for one, the bot gains models as
-  providers publish them, and the mask is moving from window capture to a proper virtual camera.
-- **The ones after these.** Further products are being built now, and they arrive here on the
-  same terms as these four: finished, measured and working. This page gains completed products,
-  not announcements.
-- **What I am looking for.** A role where this goes into a company's product: AI features,
-  agents, voice, automation — the distance between a requirement that is still vague and
-  something a customer opens. Remote, full-time or contract, UK, USA or Europe. I read a domain
-  quickly and I would rather own an outcome than a ticket queue.
+**What I am looking for.** A role where this goes into a company's product: AI features, agents,
+voice, automation. Remote, full-time or contract, UK, USA or Europe. If the stack is one I have
+not used yet, that is the normal case here rather than the exception.
 
 *Last updated: 25 September 2026. The commit history shows how often this repository changes.*
 

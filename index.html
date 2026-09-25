@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Oleksandr Voznyi — AI Product Developer, Solutions Engineer, Automation Specialist</title>
-<meta name="description" content="Four finished AI products, all of them working: a futures trading journal, a real-time speech-to-speech interpreter, live face replacement for streaming, and a multi-model Telegram assistant.">
+<meta name="description" content="Four finished AI products built in three weeks, in four technical areas that were new to me: a futures trading journal, a real-time speech-to-speech interpreter, live face replacement for streaming, and a multi-model Telegram assistant.">
 <meta property="og:title" content="Oleksandr Voznyi — AI Product Developer">
-<meta property="og:description" content="Four finished AI products, all of them working. Films, screenshots and walkthroughs from the running apps.">
+<meta property="og:description" content="Four products, three weeks, one person. Films and screenshots from the running apps.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="media/poster/trade-journal.jpg">
 <meta name="theme-color" content="#060608">
@@ -21,6 +21,7 @@
   <div class="wrap">
     <a class="brand" href="#top">Oleksandr Voznyi <span>— AI products</span></a>
     <nav class="topnav">
+      <a href="#how">What I bring</a>
       <a href="#journal">Trading Journal</a>
       <a href="#interpreter">Interpreter</a>
       <a href="#face">Face Mask</a>
@@ -33,19 +34,23 @@
 <header class="hero" id="top">
   <div class="wrap">
     <p class="eyebrow">Portfolio · Romania / Ukraine · open to remote, UK, USA, Europe</p>
-    <h1>I build AI products<br>and ship them.</h1>
+    <h1>Four products.<br>Three weeks.<br>One person.</h1>
     <p class="roles">
       <b>AI Product Developer</b> <span class="sep">/</span>
       <b>AI Solutions Engineer</b> <span class="sep">/</span>
       <b>AI Automation Specialist</b>
     </p>
     <p class="lede">
-      Four projects in the last year and a half, alone, in four different technical areas —
-      specification, architecture, implementation. One runs on a <strong>live trading
-      account</strong> every day, one starts translating <strong>before the speaker finishes the
-      sentence</strong>, one replaces a face on a live stream in <strong>~100&nbsp;ms</strong>, one
-      puts <strong>18 models</strong> behind a single chat window. All four are finished and
-      working — every film and screenshot on this page comes from the running application.
+      About a year of learning, in which I released nothing. Then September 2026: a desktop trading
+      journal, a real-time speech-to-speech interpreter, a C++ face-replacement pipeline on the
+      GPU, and a Telegram assistant with <strong>18 models</strong> behind one chat window. Four
+      technical areas, none of which I had worked in before I started.
+    </p>
+    <p class="lede">
+      That rate is what I am offering. I take on volume and several things at once, I get into an
+      unfamiliar field quickly, and I take a product from a vague requirement to something a person
+      can open. All four are finished and working — every film and screenshot on this page comes
+      from the running application.
     </p>
     <div class="meta">
       <span class="pill"><span class="dot"></span>Available now</span>
@@ -71,12 +76,102 @@
 
 <div class="strip">
   <div class="wrap">
-    <div class="cell"><div class="n">4</div><div class="k">finished products,<br>all of them working</div></div>
-    <div class="cell"><div class="n">565</div><div class="k">automated tests<br>across two of them</div></div>
-    <div class="cell"><div class="n">18</div><div class="k">AI models behind<br>one chat window</div></div>
-    <div class="cell"><div class="n">275 ms</div><div class="k">fastest measured<br>speech-to-speech</div></div>
+    <div class="cell"><div class="n">565</div><div class="k">automated tests<br>I wrote across two of them</div></div>
+    <div class="cell"><div class="n">275 ms</div><div class="k">measured speech-to-speech,<br>entirely on this machine</div></div>
+    <div class="cell"><div class="n">~100 ms</div><div class="k">camera to stream,<br>five networks per frame</div></div>
+    <div class="cell"><div class="n">13.6 MB</div><div class="k">the whole journal,<br>one file, nothing installed</div></div>
   </div>
 </div>
+
+<!-- ============ WHAT I BRING ============ -->
+<section class="section" id="how">
+  <div class="wrap">
+    <p class="eyebrow">What I bring</p>
+    <h2>Four technical areas.<br>None of them familiar when I started.</h2>
+    <p class="lede">A desktop application, a real-time GPU pipeline, local speech AI and a service
+    over eighteen model providers share no code and barely any vocabulary. I had not written C++,
+    touched CUDA or worked with speech models before this year. What carries between them is how a
+    product gets decided, built and checked — and that is the part that transfers to whatever you
+    are building.</p>
+
+    <div class="cols">
+      <div class="card">
+        <h3>I learn a field by releasing something in it</h3>
+        <p>Every one of these four was a field I entered by building a finished thing in it, not by
+        reading about it first. Thirty-three milliseconds per frame teaches you more about GPU
+        pipelines in a week than a course does in a term, because the deadline is real and the
+        thing either runs at thirty frames a second or it does not.</p>
+        <p>Hand me a domain I have never touched and the answer is the same shape: a specification
+        in days, something openable in weeks.</p>
+      </div>
+      <div class="card">
+        <h3>What I want is volume</h3>
+        <p>Four products in three weeks is the rate I like working at, and it is the rate I am
+        looking to keep. Several things moving at once, decisions made quickly and revisited when
+        the measurement says so.</p>
+        <p>I would rather own an outcome end to end — what it must do, how it is built, whether it
+        is good enough to release — than work through a queue of tickets someone else has cut.</p>
+      </div>
+    </div>
+
+    <div class="cols" style="margin-top:20px">
+      <div class="card">
+        <h3>It starts as a specification</h3>
+        <p>What the thing must do, who is holding it, and what would make it useless — written down
+        before any architecture exists. The arguments that otherwise arrive in week six happen on
+        page one, when changing your mind is free.</p>
+        <p>Then the architecture answers one constraint: 33&nbsp;ms a frame, a trader who will not
+        install a runtime, a streamer with no spare monitor. I find the one that actually binds and
+        build outward from it.</p>
+      </div>
+      <div class="card">
+        <h3>Numbers come from measurement</h3>
+        <p>Latency is broken down by stage and displayed while the thing runs. Accuracy is read off
+        material the rules were never written against — which is why the interpreter is quoted at
+        97% and not at the higher figure from its own tuning set.</p>
+        <p>Any number I cannot reproduce on demand does not go on this page or into a
+        conversation.</p>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:20px">
+      <h3>The implementation is written with an AI coding tool</h3>
+      <p>I set the requirements, decide how the product behaves, make the architecture calls and
+      test every build against real use; the code is written alongside an AI assistant. That is why
+      one person covers four technical areas at this pace, and it is the same leverage I would
+      bring to a team — I already work the way a company using these tools well would want someone
+      to work.</p>
+    </div>
+
+    <p class="eyebrow" style="margin-top:46px">Skills</p>
+
+    <div class="cols">
+      <div class="card">
+        <h3>Languages and platforms</h3>
+        <ul class="chips"><li>Python</li><li>asyncio</li><li>C++17 · CMake</li><li>SQL</li><li>HTML · CSS · JS</li><li>PowerShell</li><li>Git</li><li>REST APIs</li><li>Windows desktop</li><li>Linux · Docker</li></ul>
+      </div>
+      <div class="card">
+        <h3>AI in a running product</h3>
+        <ul class="chips"><li>18 LLM providers</li><li>Intent routing</li><li>Prompt engineering</li><li>Whisper large-v3-turbo</li><li>ONNX Runtime</li><li>CUDA · cuDNN</li><li>Piper · Kokoro TTS</li><li>Argos MT</li><li>Quality layers over model output</li></ul>
+      </div>
+    </div>
+
+    <div class="cols" style="margin-top:20px">
+      <div class="card">
+        <h3>Systems and delivery</h3>
+        <ul class="chips"><li>PostgreSQL · Alembic</li><li>SQLite</li><li>aiogram</li><li>Docker Compose</li><li>Layered architecture</li><li>Direct3D 11</li><li>Media Foundation</li><li>WebView2</li><li>Single-file builds</li></ul>
+      </div>
+      <div class="card">
+        <h3>Product work</h3>
+        <ul class="chips"><li>Specification</li><li>Architecture under one constraint</li><li>Latency measurement</li><li>Automated testing</li><li>Unit economics</li><li>EN · RU · UA interfaces</li><li>Release and acceptance</li></ul>
+      </div>
+    </div>
+
+    <p class="note">The repositories stay private: this page is the evidence, not the source. I
+    will walk through any part of the code on a call, run any of it live in front of you, or send a
+    specific module across.</p>
+  </div>
+</section>
 
 <!-- ============ 01 TRADING JOURNAL ============ -->
 <section class="section project" id="journal" data-accent="journal">
@@ -118,24 +213,14 @@
       <a href="media/video/trade-journal.mp4">Open the file ↗</a>
     </p>
 
-    <div class="cols" style="margin-bottom:30px">
-      <div class="card">
-        <h3>The decision: store distance, not money</h3>
-        <p>A trade is saved as a distance in ticks plus the instrument it was taken on. Dollars,
-        R-multiples and every statistic are derived at read time from that instrument's tick value
-        and commission.</p>
-        <p><strong>What it gave:</strong> change the contract or the position size and the whole
-        history recalculates itself. A spreadsheet keeps showing the old figures and never mentions
-        it.</p>
-      </div>
-      <div class="card">
-        <h3>The decision: one file, nothing installed</h3>
-        <p>The interface is HTML drawn by WebView2, which Windows already has. The logic underneath
-        is the Python standard library and SQLite — no framework, no third-party package.</p>
-        <p><strong>What it gave:</strong> the journal ships as a single 13.6&nbsp;MB executable. It
-        opens on a machine with nothing prepared, and there is no dependency to repair a year
-        later.</p>
-      </div>
+    <div class="card" style="margin-bottom:30px">
+      <h3>The decision: store distance, not money</h3>
+      <p>A trade is saved as a distance in ticks plus the instrument it was taken on. Dollars,
+      R-multiples and every statistic are derived at read time from that instrument's tick value
+      and commission.</p>
+      <p><strong>What it gave:</strong> change the contract or the position size and the whole
+      history recalculates itself. A spreadsheet keeps showing the old figures and never mentions
+      it.</p>
     </div>
 
     <div class="shots">
@@ -170,6 +255,7 @@
         <ul class="p-facts">
           <li>Push-to-talk, mute and an echo guard, so it survives a real conversation</li>
           <li>Appears as an ordinary microphone inside Zoom, Discord and Meet</li>
+          <li>A quality layer over raw machine translation — a glossary that must not drift, fixed corrections, a sanity check on the result: <strong>70% → 97%</strong> on held-out material</li>
           <li>No cloud, no account, no per-minute bill</li>
         </ul>
       </aside>
@@ -192,26 +278,14 @@
       <a href="media/video/voice-interpreter.mp4">Open the file ↗</a>
     </p>
 
-    <div class="cols" style="margin-bottom:30px">
-      <div class="card">
-        <h3>The decision: never wait for silence</h3>
-        <p>Audio is cut into phrases as it arrives instead of waiting for silence, and a finished
-        piece enters recognition while the next one is still being spoken. The generated voice
-        begins on the part that is already translated.</p>
-        <p><strong>What it gave:</strong> 275–520&nbsp;ms measured from the end of a phrase to the
-        first translated sound, because only the tail is still in flight. A system that waits for
-        the full utterance pays for all of it.</p>
-      </div>
-      <div class="card">
-        <h3>The decision: a second pass over the translation</h3>
-        <p>Raw machine translation was right about 70% of the time on my test material. A quality
-        layer sits behind it: a glossary of terms that must not drift, corrections for the
-        constructions the model reliably breaks, and a check that what came out is a usable
-        sentence at all.</p>
-        <p><strong>What it gave:</strong> 97% on a held-out set the rules were never written
-        against — the figure worth quoting, rather than the higher one from the material they were
-        tuned on.</p>
-      </div>
+    <div class="card" style="margin-bottom:30px">
+      <h3>The decision: never wait for silence</h3>
+      <p>Audio is cut into phrases as it arrives instead of waiting for a pause, and a finished
+      piece enters recognition while the next one is still being spoken. The generated voice begins
+      on the part that is already translated.</p>
+      <p><strong>What it gave:</strong> 275–520&nbsp;ms measured from the end of a phrase to the
+      first translated sound, because only the tail is still in flight. A system that waits for the
+      full utterance pays for all of it.</p>
     </div>
 
     <div class="shots">
@@ -246,6 +320,7 @@
         <ul class="p-facts">
           <li>Written in C++17 with GPU inference — not a Python wrapper</li>
           <li>Per-stage latency shown live, so a slow frame has a name</li>
+          <li>Blended through the face-parsing map, not an ellipse: hair, glasses and a hand across the cheek stay put, and the real mouth can be kept for lip-sync</li>
           <li>Every output frame carries a permanent AI label that cannot be switched off</li>
         </ul>
       </aside>
@@ -268,24 +343,14 @@
       <a href="media/video/live-face-mask.mp4">Open the file ↗</a>
     </p>
 
-    <div class="cols" style="margin-bottom:30px">
-      <div class="card">
-        <h3>The decision: C++, and the frame never leaves the GPU</h3>
-        <p>Thirty frames a second leaves 33&nbsp;ms for all five networks, which ruled out Python
-        early. The app is C++17 with ONNX Runtime on CUDA, and a frame stays in video memory from
-        capture through to compositing — no copy back to the CPU between stages. Each stage reports
-        its own milliseconds on screen.</p>
-        <p><strong>What it gave:</strong> about 100&nbsp;ms from camera to stream, and a slow frame
-        has a name rather than a shrug.</p>
-      </div>
-      <div class="card">
-        <h3>The decision: cut along the face, not along an ellipse</h3>
-        <p>The generated face is blended through the parsing map computed for that same frame, so
-        hair, glasses and a hand crossing the cheek stay where they are. The original mouth and eyes
-        can be kept untouched.</p>
-        <p><strong>What it gave:</strong> lip-sync stays exact, because the mouth on screen is the
-        real one — the detail that gives a swap away before anything else does.</p>
-      </div>
+    <div class="card" style="margin-bottom:20px">
+      <h3>The decision: C++, and the frame never leaves the GPU</h3>
+      <p>Thirty frames a second leaves 33&nbsp;ms for all five networks, which ruled out Python
+      early. The app is C++17 with ONNX Runtime on CUDA, and a frame stays in video memory from
+      capture through to compositing — no copy back to the CPU between stages. Each stage reports
+      its own milliseconds on screen.</p>
+      <p><strong>What it gave:</strong> about 100&nbsp;ms from camera to stream, and a slow frame
+      has a name rather than a shrug.</p>
     </div>
 
     <div class="card" style="margin-bottom:30px">
@@ -323,6 +388,8 @@
           <li>Produces real <code>.pptx</code> decks and <code>.docx</code> papers in 11 regional standards</li>
           <li>Builds trading indicators for 7 platforms, compiling <code>.jar</code> studies server-side</li>
           <li>Voice messages reach the model as audio, with no transcription step in between</li>
+          <li>Four layers — Telegram, logic, providers, storage — so a new model is a change in one place and the tariff arithmetic has a test suite of its own</li>
+          <li>A platform with no key never appears in the menu, instead of appearing and failing when pressed</li>
         </ul>
       </aside>
     </div>
@@ -353,84 +420,9 @@
       </div>
     </div>
 
-    <div class="cols" style="margin-bottom:30px">
-      <div class="card">
-        <h3>The decision: four layers, so a change lands in one</h3>
-        <p>Telegram, business logic, providers and storage are separate, with the boundaries held
-        to. A new model is a change in the provider layer; a new interface language is a change in
-        presentation; the tariff arithmetic lives in one place with a test suite of its own.</p>
-        <p><strong>What it gave:</strong> eighteen providers and three languages accumulated over
-        time without the code turning into a knot.</p>
-      </div>
-      <div class="card">
-        <h3>A missing key hides the feature</h3>
-        <p>The bot starts with a single provider key — the free Gemini one is enough. Any platform
-        without a key does not appear in the menu at all, rather than appearing and failing when
-        pressed. Nothing in the interface looks alive and does nothing.</p>
-      </div>
-    </div>
-
-    <div class="p-foot">
+    <div class="p-foot" style="margin-top:30px">
       <ul class="chips"><li>Python · aiogram</li><li>PostgreSQL · Alembic</li><li>Docker Compose</li><li>Layered architecture</li></ul>
       <a class="deep" href="projects/ai-telegram-bot.md">Every capability and layer →</a>
-    </div>
-  </div>
-</section>
-
-<!-- ============ HOW ============ -->
-<section class="section">
-  <div class="wrap">
-    <p class="eyebrow">How I work</p>
-    <h2>Nothing in common technically.<br>One way of working.</h2>
-    <p class="lede">A desktop application, a real-time GPU pipeline, local speech AI and a service
-    over eighteen model providers share no code and barely any vocabulary. What they do share is
-    how each one got decided, built and checked — and that is the part that transfers to whatever
-    a company happens to be building.</p>
-
-    <div class="cols">
-      <div class="card">
-        <h3>It starts as a specification</h3>
-        <p>What the thing must do, who is holding it, and what would make it useless — written down
-        before any architecture exists. The arguments that otherwise arrive in week six happen on
-        page one, when changing your mind is free.</p>
-      </div>
-      <div class="card">
-        <h3>The architecture answers one constraint</h3>
-        <p>Each product has a single constraint that decides its shape: 33&nbsp;ms per frame, a
-        trader who will not install a runtime, a streamer with no spare monitor for the output
-        window. I find the one that actually binds and build outward from it.</p>
-      </div>
-    </div>
-
-    <div class="cols" style="margin-top:20px">
-      <div class="card">
-        <h3>Numbers come from measurement</h3>
-        <p>Latency is broken down by stage and displayed while the thing runs; accuracy is read off
-        material the rules never saw. Any figure I cannot reproduce on demand does not go on this
-        page or into a conversation.</p>
-      </div>
-      <div class="card">
-        <h3>Failure is named, not hidden</h3>
-        <p>A feature that cannot work is shown disabled with the reason beside it. When a camera
-        hands over the wrong pixel format the application says so, rather than leaving someone with
-        a bad frame rate and a guess.</p>
-      </div>
-    </div>
-
-    <div class="cols" style="margin-top:20px">
-      <div class="card">
-        <h3>The implementation is written with an AI coding tool</h3>
-        <p>I set the requirements, decide how the product behaves, make the architecture calls and
-        test every build against real use; the code is written alongside an AI assistant. That is
-        the reason one person covers four technical areas in eighteen months, and it is the same
-        leverage I would bring to a team.</p>
-      </div>
-      <div class="card">
-        <h3>What is on this page, and what is not</h3>
-        <p>The repositories stay private: this page is the evidence, not the source. I will walk
-        through any part of the code on a call, run any of it live in front of you, or send a
-        specific module across.</p>
-      </div>
     </div>
   </div>
 </section>
@@ -439,34 +431,18 @@
 <section class="section" id="next">
   <div class="wrap">
     <p class="eyebrow">What comes next</p>
-    <h2>Four finished products.<br>The next ones are in progress.</h2>
-    <p class="lede">A project reaches this page once it is finished and working, so the page fills
-    up slowly and everything on it is complete. The work did not stop at four.</p>
-    <div class="meta">
-      <span class="pill"><span class="dot"></span>4 finished and working</span>
-      <span class="pill">More in development</span>
-    </div>
-    <div class="cols">
-      <div class="card">
-        <h3>Finished, in use, and still developing</h3>
-        <p>All four are built, tested and working — the journal on a live trading account every
-        trading day. Each keeps developing after release: the journal
-        gains a breakdown when a month of trading asks for one, the bot gains models as providers
-        publish them, and the mask is moving from window capture to a proper virtual camera.</p>
-      </div>
-      <div class="card">
-        <h3>The ones after these</h3>
-        <p>Further products are being built now, and they arrive here on the same terms as these
-        four: finished, measured, and working. This page gains completed products, not
-        announcements.</p>
-      </div>
-    </div>
-    <div class="card" style="margin-top:20px">
+    <h2>These four are done.<br>They are not the last.</h2>
+    <p class="lede">A product reaches this page once it is finished and working, so the page fills
+    up slowly and nothing on it is an announcement. All four keep developing after release: the
+    journal gains a breakdown when a month of trading asks for one, the bot gains models as
+    providers publish them, the mask is moving from window capture to a proper virtual camera.
+    More are being built right now, and they arrive here on the same terms — finished, measured,
+    working.</p>
+    <div class="card">
       <h3>What I am looking for</h3>
-      <p>A role where this goes into a company's product: AI features, agents, voice, automation —
-      the distance between a requirement that is still vague and something a customer opens.
-      Remote, full-time or contract, UK, USA or Europe. I read a domain quickly and I would rather
-      own an outcome than a ticket queue.</p>
+      <p>A role where this goes into a company's product: AI features, agents, voice, automation.
+      Remote, full-time or contract, UK, USA or Europe. If the stack is one I have not used yet,
+      that is the normal case here rather than the exception.</p>
     </div>
     <p class="note">Last updated 25 September 2026 · the commit history on
     <a href="https://github.com/OVALLProjects/portfolio">GitHub</a> shows how often this page
@@ -506,7 +482,7 @@
 <footer>
   <div class="wrap">
     <span>Oleksandr Voznyi · Romania / Ukraine</span>
-    <span>Every screenshot and film on this page comes from the running application.</span>
+    <span>aleksandr.vzn@icloud.com · @s1804v</span>
   </div>
 </footer>
 

@@ -6,9 +6,9 @@
 
 ---
 
-# Four products. Three weeks. One person.
+# Four products. Two months. One person.
 
-About a year of learning, in which I released nothing. Then September 2026: a desktop trading
+About a year of learning, in which I released nothing. Then, by September 2026: a desktop trading
 journal, a real-time speech-to-speech interpreter, a C++ face-replacement pipeline on the GPU,
 and a Telegram assistant with **18 models** behind one chat window. Four technical areas, none of
 which I had worked in before I started.
@@ -41,7 +41,7 @@ that transfers to whatever you are building.
   deadline is real and the thing either runs at thirty frames a second or it does not. Hand me a
   domain I have never touched and the answer is the same shape: a specification in days, something
   openable in weeks.
-- **What I want is volume.** Four products in three weeks is the rate I like working at, and the
+- **What I want is volume.** Four products in two months is the rate I like working at, and the
   rate I am looking to keep: several things moving at once, decisions made quickly and revisited
   when the measurement says so. I would rather own an outcome end to end — what it must do, how it
   is built, whether it is good enough to release — than work through a queue of tickets someone

@@ -6,11 +6,13 @@
 
 ---
 
-Four products below. One runs on a **live trading account** every day, one has **paying
+Four products so far. One runs on a **live trading account** every day, one has **paying
 subscribers**, one puts a replaced face on a live stream in **~100 ms**, and one translates a
 conversation faster than the other person can finish a sentence.
 
 Every clip and screenshot here comes from the running application. Nothing is a mockup.
+Four products in production today, **with more in development** — see [what comes
+next](#what-comes-next).
 
 | | |
 |---|---|
@@ -144,6 +146,26 @@ Three habits visible in all four projects:
   is the one from the held-out set, not the set the rules were tuned on.
 - **The failure is named.** When the camera hands over the wrong pixel format, the app says so
   instead of leaving you with a low frame rate and no explanation.
+
+---
+
+## What comes next
+
+Four products in production. The list keeps growing.
+
+- **Complete, not in progress.** All four are built, tested and in real use — one on a live
+  trading account every trading day, one with paying subscribers. None of them is a prototype
+  waiting on a final feature.
+- **Further products in development.** More are being built now. They are added here on the
+  same terms as these four: running, measured, and shown from the real application.
+- **Development continues after release.** Products that are used keep growing. The journal
+  gains a new breakdown when a month of trading calls for one; the bot gains models as
+  providers release them.
+- **What qualifies for this page.** A project is listed only once it is in real use by
+  someone. That is why there are four rather than fourteen, and why the number will rise
+  slowly.
+
+*Last updated: 25 September 2026. The commit history shows how often this repository changes.*
 
 ---
 

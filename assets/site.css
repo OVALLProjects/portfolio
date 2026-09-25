@@ -393,6 +393,14 @@ code {
 .cap a { color: var(--ink-2); text-underline-offset: 3px; }
 .cap a:hover { color: var(--ink); }
 
+.note {
+  font-size: 13px;
+  color: var(--ink-3);
+  margin: 26px 0 0;
+}
+.note a { color: var(--ink-2); text-underline-offset: 3px; }
+.note a:hover { color: var(--ink); }
+
 .shots {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));

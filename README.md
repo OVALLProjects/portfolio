@@ -30,7 +30,7 @@ Every trade is stored as a distance in ticks, not as a number of dollars. Switch
 the size and the money, the R-multiples and the whole statistic recalculate themselves — instead
 of quietly becoming wrong, the way a spreadsheet does.
 
-![Trading Journal — logging a trade, the month calendar, the breakdown](media/preview/trade-journal.gif)
+https://github.com/user-attachments/assets/c8c2c66f-0786-4095-a8b1-83f5dfdb9a3f
 
 - One file — `TradeJournal.exe` at 13.6 MB. No Python, no installer, no runtime to chase
 - 16 futures contracts preloaded with tick value and per-contract commission
@@ -54,7 +54,7 @@ You speak Russian and the other person hears English in a generated voice, both 
 while the call keeps going. Recognition, translation and speech all run on the machine — the
 conversation never leaves the room.
 
-![AI Voice Interpreter — microphone to translated voice](media/preview/voice-interpreter.gif)
+https://github.com/user-attachments/assets/a628b758-9aeb-4a88-9a93-1e32801685a7
 
 - **275–520 ms** from the end of a phrase to the first translated sound — measured, not estimated
 - Streaming mode starts translating before the speaker has finished
@@ -77,7 +77,7 @@ Detection, 106 landmarks, identity embedding, generation and face parsing run on
 frame of the webcam feed, and the result goes straight into OBS as a clean window. No plugin, no
 virtual camera driver, nothing to install into OBS.
 
-![Live Face Mask — detection, landmarks, swap, OBS output](media/preview/live-face-mask.gif)
+https://github.com/user-attachments/assets/9ea8aea5-e187-4448-9d36-d2464d272b23
 
 - **~100 ms** camera to air — three frames at 30 fps, short enough that lips stay with the sound
 - 5 ONNX models, about 770 MB, resident on the GPU
@@ -151,6 +151,7 @@ Three habits visible in all four projects:
 
 - Email — [aleksandr.vzn@icloud.com](mailto:aleksandr.vzn@icloud.com)
 - Telegram — [@s1804v](https://t.me/s1804v)
+- LinkedIn — [oleksandr-voznyi](https://www.linkedin.com/in/oleksandr-voznyi-763a41439/)
 - GitHub — [OVALLProjects](https://github.com/OVALLProjects)
 
 A call works in English or Russian. If you want to see something specific — the tick maths, the

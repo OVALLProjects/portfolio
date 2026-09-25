@@ -11,8 +11,7 @@ subscribers**, one puts a replaced face on a live stream in **~100 ms**, and one
 conversation faster than the other person can finish a sentence.
 
 Every clip and screenshot here comes from the running application. Nothing is a mockup.
-Four products in production today, **with more in development** — see [what comes
-next](#what-comes-next).
+**More products are already in development** — see [what comes next](#what-comes-next).
 
 | | |
 |---|---|
@@ -29,8 +28,8 @@ next](#what-comes-next).
 *In daily use on a live account.*
 
 Every trade is stored as a distance in ticks, not as a number of dollars. Switch the contract or
-the size and the money, the R-multiples and the whole statistic recalculate themselves — instead
-of quietly becoming wrong, the way a spreadsheet does.
+the size, and the money, the R-multiples and every statistic recalculate themselves — instead of
+quietly becoming wrong, the way a spreadsheet does.
 
 https://github.com/user-attachments/assets/c8c2c66f-0786-4095-a8b1-83f5dfdb9a3f
 
@@ -111,7 +110,8 @@ mid-conversation and back again.
 - Produces real `.pptx` decks and `.docx` papers in 11 regional formatting standards
 - Builds trading indicators for 7 platforms, compiling `.jar` studies server-side
 - **312 tests**, one suite dedicated purely to pricing mistakes that cost money
-- Official provider APIs only — no cookies, no session tokens, nothing bannable
+- Official provider APIs only — no cookies, no session tokens, nothing that can get an account
+  banned
 
 `Python · aiogram`  `PostgreSQL · Alembic`  `Docker Compose`
 
@@ -159,13 +159,13 @@ products are already being built**.
   trading account every trading day, one with paying subscribers. None of them is a prototype
   waiting on a final feature.
 - **Further products in development.** More are being built now, and they reach this page on
-  the same terms as these four: running, measured, and shown from the real application. It
-  gains finished products, not announcements.
+  the same terms as these four: running, measured, and shown from the real application. The
+  page gains finished products, not announcements.
 - **Development continues after release.** Products that are used keep growing. The journal
   gains a new breakdown when a month of trading calls for one; the bot gains models as
   providers release them.
 - **Where this is heading.** The next products are built the same way: a precise specification,
-  measured results, and a real user by the end of it. I am looking for a role where that pace
+  measured results and a real user at the end of it. I am looking for a role where that pace
   goes into a company's product rather than only my own.
 
 *Last updated: 25 September 2026. The commit history shows how often this repository changes.*

@@ -53,7 +53,7 @@ so the held-out number is the honest one.
 The other person is** sets grammatical gender: Russian marks the speaker's gender in almost
 every sentence about themselves ("I was late" is *опоздал* or *опоздала*) and English does
 not carry it, so without this the translator has to guess. **Domain** picks the field whose
-terms get protected — 17 of them, plus an interview mode — and can be changed mid-call.
+terms get protected — 17 of them, including an interview mode — and can be changed mid-call.
 
 **Audio** — microphone, headphones, which virtual cable the translation is sent to, and where
 the other person's voice comes from. **Their original voice** is a slider: you keep hearing
@@ -109,9 +109,9 @@ cable and a beep into the headphones, and tells you which leg of the route is wr
 of leaving you in silence during the call.
 
 Privacy is a set of switches, all off unless turned on: audio is not written to disk, the
-transcript stays in memory, the local engine sends nothing over the network, and voice
-cloning requires explicit consent and can be deleted. **Delete history** removes everything
-at once.
+transcript stays in memory, the local engine sends nothing over the network, and voice cloning
+requires explicit consent, with the stored voice deletable at any point. **Delete history**
+removes everything at once.
 
 ---
 

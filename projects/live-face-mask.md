@@ -9,8 +9,8 @@ it, cut the mask, generate the new face, blend it in.
 
 [▶ 30-second clip](../media/video/live-face-mask.mp4)
 
-*(Interface screenshots are coming — the app opens a window on the machine it runs on, and
-the screen was busy when this page was written.)*
+*(There are no interface screenshots yet: the app's window shows a live camera feed. The
+walkthrough below is in text, and the clip shows it working.)*
 
 ---
 

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Oleksandr Voznyi — AI Product Developer, Solutions Engineer, Automation Specialist</title>
+<meta name="description" content="Four AI products that run in production: a futures trading journal, a real-time speech-to-speech interpreter, live face replacement for streaming, and a multi-model Telegram assistant.">
+<meta property="og:title" content="Oleksandr Voznyi — AI Product Developer">
+<meta property="og:description" content="Four AI products that run in production. Films, screenshots and walkthroughs from the running apps.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="media/poster/trade-journal.jpg">
+<meta name="theme-color" content="#060608">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <a class="brand" href="#top">Oleksandr Voznyi <span>— AI products</span></a>
+    <nav class="topnav">
+      <a href="#journal">Trading Journal</a>
+      <a href="#interpreter">Interpreter</a>
+      <a href="#face">Face Mask</a>
+      <a href="#bot">Telegram Bot</a>
+    </nav>
+    <a class="lang" href="ru.html">RU</a>
+  </div>
+</div>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <p class="eyebrow">Portfolio · Romania / Ukraine · open to remote, UK, USA, Europe</p>
+    <h1>I build AI products<br>and ship them.</h1>
+    <p class="roles">
+      <b>AI Product Developer</b> <span class="sep">/</span>
+      <b>AI Solutions Engineer</b> <span class="sep">/</span>
+      <b>AI Automation Specialist</b>
+    </p>
+    <p class="lede">
+      Four products below. One runs on a <strong>live trading account</strong> every day, one has
+      <strong>paying subscribers</strong>, one puts a replaced face on a live stream in
+      <strong>~100&nbsp;ms</strong>, and one translates a conversation faster than the other person
+      can finish a sentence. Every film and screenshot on this page comes from the running
+      application — nothing here is a mockup.
+    </p>
+    <div class="meta">
+      <span class="pill"><span class="dot"></span>Available now</span>
+      <span class="pill">Full-time · Contract</span>
+      <span class="pill">English · Russian · Ukrainian</span>
+    </div>
+    <div class="cta">
+      <a class="btn btn-primary" href="#journal">
+        See the products
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <a class="btn" href="mailto:aleksandr.vzn@icloud.com">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+        aleksandr.vzn@icloud.com
+      </a>
+      <a class="btn" href="https://t.me/s1804v">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 4.5 2.5 11l6 2.2L18 7l-7 8.3.6 5.2 3.1-3.6"/></svg>
+        Telegram
+      </a>
+    </div>
+  </div>
+</header>
+
+<div class="strip">
+  <div class="wrap">
+    <div class="cell"><div class="n">4</div><div class="k">products running,<br>not prototypes</div></div>
+    <div class="cell"><div class="n">565</div><div class="k">automated tests<br>across two of them</div></div>
+    <div class="cell"><div class="n">18</div><div class="k">AI models behind<br>one chat window</div></div>
+    <div class="cell"><div class="n">275 ms</div><div class="k">fastest measured<br>speech-to-speech</div></div>
+  </div>
+</div>
+
+<!-- ============ 01 TRADING JOURNAL ============ -->
+<section class="section project" id="journal" data-accent="journal">
+  <div class="wrap">
+    <div class="p-head">
+      <div>
+        <div class="p-num">01 — TRADING JOURNAL</div>
+        <h2>A futures journal that survives<br>changing the instrument.</h2>
+        <p class="p-sub">
+          Every trade is stored as a distance in ticks, not as a number of dollars. Switch the
+          contract or the size and the money, the R-multiples and the whole statistic recalculate
+          themselves — instead of quietly becoming wrong, the way a spreadsheet does.
+        </p>
+      </div>
+      <aside class="p-aside">
+        <span class="pill"><span class="dot"></span>In daily use on a live account</span>
+        <ul class="p-facts">
+          <li>One file — <code>TradeJournal.exe</code> at 13.6&nbsp;MB. No Python, no installer, no runtime to chase</li>
+          <li>Nothing leaves the machine: <code>trades.db</code> sits next to the app</li>
+          <li>Interface in English and Russian, session-aware time zones</li>
+        </ul>
+      </aside>
+    </div>
+
+    <div class="metrics">
+      <div><div class="n">16</div><div class="k">futures contracts preloaded with tick value and commission</div></div>
+      <div><div class="n">6</div><div class="k">analytic views: calendar, curve, profile, breakdown, models, instruments</div></div>
+      <div><div class="n">0</div><div class="k">network calls — fully offline by design</div></div>
+      <div><div class="n">stdlib</div><div class="k">Python standard library only, SQLite, WebView2</div></div>
+    </div>
+
+    <figure class="figure">
+      <video controls preload="metadata" playsinline poster="media/poster/trade-journal.jpg">
+        <source src="media/video/trade-journal.mp4" type="video/mp4">
+      </video>
+    </figure>
+    <p class="cap">
+      <span>Walkthrough — 30 s: logging a trade, the month calendar, what the breakdown answers.</span>
+      <a href="media/video/trade-journal.mp4">Open the file ↗</a>
+    </p>
+
+    <div class="shots">
+      <a href="media/trade-journal/01-month-en.png"><img src="media/trade-journal/01-month-en.png" alt="Month view with calendar, equity curve and statistics" loading="lazy"><span class="lbl">Month — calendar, curve, profile</span></a>
+      <a href="media/trade-journal/02-all-time-en.png"><img src="media/trade-journal/02-all-time-en.png" alt="All-time view across 361 trades" loading="lazy"><span class="lbl">All time — 361 trades, 200 days</span></a>
+      <a href="media/trade-journal/03-day-en.png"><img src="media/trade-journal/03-day-en.png" alt="A single day opened with its trades" loading="lazy"><span class="lbl">One day — trades and outcomes</span></a>
+      <a href="media/trade-journal/06-instruments-en.png"><img src="media/trade-journal/06-instruments-en.png" alt="Instrument editor with tick values" loading="lazy"><span class="lbl">Instruments — ticks and commission</span></a>
+    </div>
+
+    <div class="p-foot">
+      <ul class="chips"><li>Python · stdlib only</li><li>SQLite</li><li>WebView2</li><li>Single-file build</li></ul>
+      <a class="deep" href="projects/trade-journal.md">Every control, explained →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 02 INTERPRETER ============ -->
+<section class="section project" id="interpreter" data-accent="interpreter">
+  <div class="wrap">
+    <div class="p-head">
+      <div>
+        <div class="p-num">02 — AI VOICE INTERPRETER</div>
+        <h2>Two people, two languages,<br>one conversation.</h2>
+        <p class="p-sub">
+          You speak Russian and the other person hears English in a generated voice, both
+          directions, while the call keeps going. Recognition, translation and speech all run on
+          the machine — the conversation never leaves the room.
+        </p>
+      </div>
+      <aside class="p-aside">
+        <span class="pill"><span class="dot"></span>Core done · 253 tests</span>
+        <ul class="p-facts">
+          <li>Streaming mode starts translating before the speaker has finished</li>
+          <li>Appears as an ordinary microphone inside Zoom, Discord and Meet</li>
+          <li>No cloud, no account, no per-minute bill</li>
+        </ul>
+      </aside>
+    </div>
+
+    <div class="metrics">
+      <div><div class="n">275–520 ms</div><div class="k">end of phrase to first translated sound, measured</div></div>
+      <div><div class="n">70 → 97%</div><div class="k">translation accuracy on a held-out set after the quality layer</div></div>
+      <div><div class="n">253</div><div class="k">automated tests</div></div>
+      <div><div class="n">100%</div><div class="k">local — Whisper, Argos and the voices all run on the GPU here</div></div>
+    </div>
+
+    <figure class="figure">
+      <video controls preload="metadata" playsinline poster="media/poster/voice-interpreter.jpg">
+        <source src="media/video/voice-interpreter.mp4" type="video/mp4">
+      </video>
+    </figure>
+    <p class="cap">
+      <span>Walkthrough — 30 s: the path from microphone to translated voice, and where the latency goes.</span>
+      <a href="media/video/voice-interpreter.mp4">Open the file ↗</a>
+    </p>
+
+    <div class="shots">
+      <a href="media/ai-voice-interpreter/01-window.png"><img src="media/ai-voice-interpreter/01-window.png" alt="The interpreter window" loading="lazy"><span class="lbl">The window — languages, audio, behaviour</span></a>
+    </div>
+
+    <div class="p-foot">
+      <ul class="chips"><li>Python</li><li>Whisper large-v3-turbo</li><li>Argos MT</li><li>Piper · Kokoro TTS</li><li>CUDA</li></ul>
+      <a class="deep" href="projects/ai-voice-interpreter.md">Latency, quality and what is not done →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 03 FACE MASK ============ -->
+<section class="section project" id="face" data-accent="face">
+  <div class="wrap">
+    <div class="p-head">
+      <div>
+        <div class="p-num">03 — LIVE FACE MASK</div>
+        <h2>Five neural networks per frame,<br>inside 33 milliseconds.</h2>
+        <p class="p-sub">
+          Detection, 106 landmarks, identity embedding, generation and face parsing all run on
+          every single frame of the webcam feed, and the result goes straight into OBS as a clean
+          window. No plugin, no virtual camera driver, nothing to install into OBS.
+        </p>
+      </div>
+      <aside class="p-aside">
+        <span class="pill"><span class="dot"></span>Working · ~100 ms camera to stream</span>
+        <ul class="p-facts">
+          <li>Written in C++17 with GPU inference — not a Python wrapper</li>
+          <li>Per-stage latency shown live, so a slow frame has a name</li>
+          <li>Every output frame carries a permanent AI label that cannot be switched off</li>
+        </ul>
+      </aside>
+    </div>
+
+    <div class="metrics">
+      <div><div class="n">~100 ms</div><div class="k">camera to air — three frames at 30 fps</div></div>
+      <div><div class="n">5</div><div class="k">ONNX models, about 770 MB, resident on the GPU</div></div>
+      <div><div class="n">1280×720</div><div class="k">clean output window, captured by OBS like any other</div></div>
+      <div><div class="n">C++17</div><div class="k">ONNX Runtime + CUDA, Direct3D 11 rendering</div></div>
+    </div>
+
+    <figure class="figure">
+      <video controls preload="metadata" playsinline poster="media/poster/live-face-mask.jpg">
+        <source src="media/video/live-face-mask.mp4" type="video/mp4">
+      </video>
+    </figure>
+    <p class="cap">
+      <span>Walkthrough — 30 s: detection, the 106 points, the swap, and the hand-off to OBS.</span>
+      <a href="media/video/live-face-mask.mp4">Open the file ↗</a>
+    </p>
+
+    <div class="card" style="margin-bottom:30px">
+      <h3>The watermark is not a setting</h3>
+      <p>
+        <strong>“AI-generated face effect”</strong> is burned into every output frame and there is
+        no option to remove it. A face swap that hides what it is would be a different tool for a
+        different purpose, and I did not want to build that one.
+      </p>
+    </div>
+
+    <div class="p-foot">
+      <ul class="chips"><li>C++17 · CMake</li><li>ONNX Runtime</li><li>CUDA · cuDNN</li><li>Direct3D 11</li><li>Dear ImGui</li><li>Media Foundation</li></ul>
+      <a class="deep" href="projects/live-face-mask.md">The pipeline, the sliders, the limits →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 04 TELEGRAM BOT ============ -->
+<section class="section project" id="bot" data-accent="bot">
+  <div class="wrap">
+    <div class="p-head">
+      <div>
+        <div class="p-num">04 — AI TELEGRAM BOT</div>
+        <h2>One chat window,<br>eighteen models behind it.</h2>
+        <p class="p-sub">
+          You do not pick a specialisation and you do not learn commands. Send a photo, a voice
+          message, a spreadsheet or a link, and the right model gets the job — including when the
+          subject changes mid-conversation and back again.
+        </p>
+      </div>
+      <aside class="p-aside">
+        <span class="pill"><span class="dot"></span>In production · paying users</span>
+        <ul class="p-facts">
+          <li>Produces real <code>.pptx</code> decks and <code>.docx</code> papers in 11 regional standards</li>
+          <li>Builds trading indicators for 7 platforms, compiling <code>.jar</code> studies server-side</li>
+          <li>Official provider APIs only — no cookies, no session tokens, nothing bannable</li>
+        </ul>
+      </aside>
+    </div>
+
+    <div class="metrics">
+      <div><div class="n">18</div><div class="k">models, chosen automatically per question</div></div>
+      <div><div class="n">312</div><div class="k">tests, one suite dedicated to pricing mistakes that cost money</div></div>
+      <div><div class="n">7</div><div class="k">trading platforms it writes indicators for</div></div>
+      <div><div class="n">3</div><div class="k">interface languages: Russian, English, Ukrainian</div></div>
+    </div>
+
+    <div class="cols" style="margin-bottom:30px">
+      <div class="card">
+        <h3>What a user actually sends it</h3>
+        <p>Photos, screenshots and scans. Voice messages — straight to the model, with no
+        transcription step in between. Video and GIFs. PDF, docx, xlsx, csv and source files,
+        complete with their tables. A bare URL, which it reads before answering.</p>
+      </div>
+      <div class="card">
+        <h3>A missing key hides a feature</h3>
+        <p>The bot starts with a single provider key — the free Gemini one is enough. Any platform
+        without a key simply does not appear in the menu, instead of appearing and failing. There
+        are no buttons that look alive and do nothing.</p>
+      </div>
+    </div>
+
+    <div class="p-foot">
+      <ul class="chips"><li>Python · aiogram</li><li>PostgreSQL · Alembic</li><li>Docker Compose</li><li>Layered architecture</li></ul>
+      <a class="deep" href="projects/ai-telegram-bot.md">Every capability and layer →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOW ============ -->
+<section class="section">
+  <div class="wrap">
+    <p class="eyebrow">How this was built</p>
+    <div class="cols">
+      <div class="card">
+        <h3>Why there is no source code here</h3>
+        <p>These are products, not exercises. Two of them earn money, one handles a live trading
+        account, and each took months. This page shows <strong>what exists and that it
+        works</strong>; the code stays private.</p>
+        <p>I will walk through any part of it in a call, demo it live, or share a specific module
+        on request.</p>
+      </div>
+      <div class="card">
+        <h3>I work with an AI assistant, and I say so</h3>
+        <p>I define the product, decide how it must behave, test every build against real use, and
+        write the implementation together with an AI coding tool. The requirements, the
+        architecture decisions, the acceptance and the bug hunting are mine; a large share of the
+        typing is not.</p>
+        <p>What that leaves me good at: turning a vague idea into a precise specification, finding
+        the case where the thing breaks, and shipping something a real person uses the next
+        morning.</p>
+      </div>
+    </div>
+
+    <div class="cols" style="margin-top:20px">
+      <div class="card">
+        <h3>Nothing pretends to work</h3>
+        <p>Unavailable features are shown disabled with the reason next to them. When the camera
+        hands over the wrong pixel format, the app says exactly that instead of leaving you with a
+        low frame rate and no explanation.</p>
+      </div>
+      <div class="card">
+        <h3>The honest number, not the flattering one</h3>
+        <p>Latency is measured, not estimated. The translation quality figure quoted here is the
+        one from the held-out set — not the higher one from the set the rules were tuned on.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <p class="eyebrow">Contact</p>
+    <h2>Happy to demo any of these live.</h2>
+    <p class="prose">A call works in English or Russian. If you want to see something specific —
+    the tick maths, the latency breakdown, the tariff tests — say which, and I will open that part
+    on screen.</p>
+    <div class="links">
+      <a href="mailto:aleksandr.vzn@icloud.com">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+        <span><span class="t">Email</span><br><span class="v">aleksandr.vzn@icloud.com</span></span>
+      </a>
+      <a href="https://t.me/s1804v">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 4.5 2.5 11l6 2.2L18 7l-7 8.3.6 5.2 3.1-3.6"/></svg>
+        <span><span class="t">Telegram</span><br><span class="v">@s1804v</span></span>
+      </a>
+      <a href="https://github.com/OVALLProjects">
+        <svg class="ic" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.5 3.17-1.18 3.17-1.18.63 1.59.23 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.43-2.69 5.4-5.25 5.69.41.36.78 1.06.78 2.15v3.18c0 .31.2.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></svg>
+        <span><span class="t">GitHub</span><br><span class="v">OVALLProjects</span></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>Oleksandr Voznyi · Romania / Ukraine</span>
+    <span>Every screenshot and film on this page comes from the running application.</span>
+  </div>
+</footer>
+
+</body>
+</html>

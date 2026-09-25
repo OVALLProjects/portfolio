@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Александр Возный — AI Product Developer, Solutions Engineer, Automation Specialist</title>
+<meta name="description" content="Четыре AI-продукта, которые работают: журнал трейдера, голосовой переводчик в реальном времени, замена лица в прямом эфире и Telegram-помощник на 18 моделях.">
+<meta property="og:title" content="Александр Возный — AI Product Developer">
+<meta property="og:description" content="Четыре AI-продукта, которые работают. Ролики, скриншоты и разборы сняты с живых приложений.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="media/poster/trade-journal.jpg">
+<meta name="theme-color" content="#060608">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <a class="brand" href="#top">Александр Возный <span>— AI-продукты</span></a>
+    <nav class="topnav">
+      <a href="#journal">Журнал трейдера</a>
+      <a href="#interpreter">Переводчик</a>
+      <a href="#face">Замена лица</a>
+      <a href="#bot">Telegram-бот</a>
+    </nav>
+    <a class="lang" href="index.html">EN</a>
+  </div>
+</div>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <p class="eyebrow">Портфолио · Румыния / Украина · удалённо, Великобритания, США, Европа</p>
+    <h1>Я делаю AI-продукты<br>и довожу их до работы.</h1>
+    <p class="roles">
+      <b>AI Product Developer</b> <span class="sep">/</span>
+      <b>AI Solutions Engineer</b> <span class="sep">/</span>
+      <b>AI Automation Specialist</b>
+    </p>
+    <p class="lede">
+      Ниже четыре продукта. Один каждый день работает на <strong>живом торговом счёте</strong>,
+      у второго <strong>платящие пользователи</strong>, третий ставит подменённое лицо в прямой
+      эфир за <strong>~100&nbsp;мс</strong>, четвёртый переводит разговор быстрее, чем собеседник
+      успевает договорить фразу. Каждый ролик и каждый скриншот здесь сняты с работающего
+      приложения — нарисованного нет ничего.
+    </p>
+    <div class="meta">
+      <span class="pill"><span class="dot"></span>Свободен сейчас</span>
+      <span class="pill">Полная занятость · контракт</span>
+      <span class="pill">Английский · русский · украинский</span>
+    </div>
+    <div class="cta">
+      <a class="btn btn-primary" href="#journal">
+        Посмотреть продукты
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <a class="btn" href="mailto:aleksandr.vzn@icloud.com">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+        aleksandr.vzn@icloud.com
+      </a>
+      <a class="btn" href="https://t.me/s1804v">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 4.5 2.5 11l6 2.2L18 7l-7 8.3.6 5.2 3.1-3.6"/></svg>
+        Telegram
+      </a>
+    </div>
+  </div>
+</header>
+
+<div class="strip">
+  <div class="wrap">
+    <div class="cell"><div class="n">4</div><div class="k">работающих продукта,<br>а не прототипа</div></div>
+    <div class="cell"><div class="n">565</div><div class="k">автотестов<br>в двух из них</div></div>
+    <div class="cell"><div class="n">18</div><div class="k">моделей за одним<br>окном чата</div></div>
+    <div class="cell"><div class="n">275 мс</div><div class="k">лучшая замеренная<br>задержка перевода</div></div>
+  </div>
+</div>
+
+<!-- ============ 01 ЖУРНАЛ ============ -->
+<section class="section project" id="journal" data-accent="journal">
+  <div class="wrap">
+    <div class="p-head">
+      <div>
+        <div class="p-num">01 — ЖУРНАЛ ТРЕЙДЕРА</div>
+        <h2>Журнал, который переживает<br>смену инструмента.</h2>
+        <p class="p-sub">
+          Сделка хранится расстоянием в тиках, а не суммой в долларах. Поменяли контракт или
+          объём — деньги, R и вся статистика пересчитались сами, вместо того чтобы тихо стать
+          неверными, как это происходит в таблице.
+        </p>
+      </div>
+      <aside class="p-aside">
+        <span class="pill"><span class="dot"></span>В ежедневной работе на живом счёте</span>
+        <ul class="p-facts">
+          <li>Один файл — <code>TradeJournal.exe</code> на 13.6&nbsp;МБ. Ни Python, ни установщика, ни среды исполнения</li>
+          <li>Из машины ничего не уходит: <code>trades.db</code> лежит рядом с программой</li>
+          <li>Интерфейс на русском и английском, часовые пояса по сессиям</li>
+        </ul>
+      </aside>
+    </div>
+
+    <div class="metrics">
+      <div><div class="n">16</div><div class="k">фьючерсов заведены со стоимостью тика и комиссией</div></div>
+      <div><div class="n">6</div><div class="k">разрезов: календарь, кривая, профиль, разбивка, модели, инструменты</div></div>
+      <div><div class="n">0</div><div class="k">обращений в сеть — офлайн по замыслу</div></div>
+      <div><div class="n">stdlib</div><div class="k">только стандартная библиотека Python, SQLite, WebView2</div></div>
+    </div>
+
+    <figure class="figure">
+      <video controls preload="metadata" playsinline poster="media/poster/trade-journal.jpg">
+        <source src="media/video/trade-journal.mp4" type="video/mp4">
+      </video>
+    </figure>
+    <p class="cap">
+      <span>Разбор, 30 с: как вносится сделка, месячный календарь, на что отвечает разбивка.</span>
+      <a href="media/video/trade-journal.mp4">Открыть файл ↗</a>
+    </p>
+
+    <div class="shots">
+      <a href="media/trade-journal/01-month-ru.png"><img src="media/trade-journal/01-month-ru.png" alt="Месяц: календарь, кривая счёта и статистика" loading="lazy"><span class="lbl">Месяц — календарь, кривая, профиль</span></a>
+      <a href="media/trade-journal/02-all-time-ru.png"><img src="media/trade-journal/02-all-time-ru.png" alt="Вид за всё время, 361 сделка" loading="lazy"><span class="lbl">Всё время — 361 сделка, 200 дней</span></a>
+      <a href="media/trade-journal/03-day-ru.png"><img src="media/trade-journal/03-day-ru.png" alt="Открытый день со сделками" loading="lazy"><span class="lbl">День — сделки и исходы</span></a>
+      <a href="media/trade-journal/06-instruments-ru.png"><img src="media/trade-journal/06-instruments-ru.png" alt="Редактор инструментов" loading="lazy"><span class="lbl">Инструменты — тики и комиссия</span></a>
+    </div>
+
+    <div class="p-foot">
+      <ul class="chips"><li>Python · только stdlib</li><li>SQLite</li><li>WebView2</li><li>Сборка в один файл</li></ul>
+      <a class="deep" href="projects/trade-journal.ru.md">Разбор каждой кнопки →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 02 ПЕРЕВОДЧИК ============ -->
+<section class="section project" id="interpreter" data-accent="interpreter">
+  <div class="wrap">
+    <div class="p-head">
+      <div>
+        <div class="p-num">02 — ГОЛОСОВОЙ ПЕРЕВОДЧИК</div>
+        <h2>Двое, два языка,<br>один разговор.</h2>
+        <p class="p-sub">
+          Вы говорите по-русски, собеседник слышит английский синтезированным голосом — и так в
+          обе стороны, не прерывая разговор. Распознавание, перевод и речь считаются на машине:
+          разговор не покидает комнату.
+        </p>
+      </div>
+      <aside class="p-aside">
+        <span class="pill"><span class="dot"></span>Ядро готово · 253 теста</span>
+        <ul class="p-facts">
+          <li>Потоковый режим начинает переводить до того, как говорящий закончил</li>
+          <li>Виден обычным микрофоном внутри Zoom, Discord и Meet</li>
+          <li>Ни облака, ни аккаунта, ни счёта за минуты</li>
+        </ul>
+      </aside>
+    </div>
+
+    <div class="metrics">
+      <div><div class="n">275–520 мс</div><div class="k">от конца фразы до первого переведённого звука, замер</div></div>
+      <div><div class="n">70 → 97%</div><div class="k">точность перевода на отложенном наборе после слоя качества</div></div>
+      <div><div class="n">253</div><div class="k">автоматических теста</div></div>
+      <div><div class="n">100%</div><div class="k">локально — Whisper, Argos и голоса считаются здесь, на видеокарте</div></div>
+    </div>
+
+    <figure class="figure">
+      <video controls preload="metadata" playsinline poster="media/poster/voice-interpreter.jpg">
+        <source src="media/video/voice-interpreter.mp4" type="video/mp4">
+      </video>
+    </figure>
+    <p class="cap">
+      <span>Разбор, 30 с: путь от микрофона до переведённого голоса и куда уходит задержка.</span>
+      <a href="media/video/voice-interpreter.mp4">Открыть файл ↗</a>
+    </p>
+
+    <div class="shots">
+      <a href="media/ai-voice-interpreter/01-window.png"><img src="media/ai-voice-interpreter/01-window.png" alt="Окно переводчика" loading="lazy"><span class="lbl">Окно — языки, звук, поведение</span></a>
+    </div>
+
+    <div class="p-foot">
+      <ul class="chips"><li>Python</li><li>Whisper large-v3-turbo</li><li>Argos MT</li><li>Piper · Kokoro TTS</li><li>CUDA</li></ul>
+      <a class="deep" href="projects/ai-voice-interpreter.ru.md">Задержка, качество и чего ещё нет →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 03 ЗАМЕНА ЛИЦА ============ -->
+<section class="section project" id="face" data-accent="face">
+  <div class="wrap">
+    <div class="p-head">
+      <div>
+        <div class="p-num">03 — ЗАМЕНА ЛИЦА В ЭФИРЕ</div>
+        <h2>Пять нейросетей на кадр,<br>и всё это за 33 миллисекунды.</h2>
+        <p class="p-sub">
+          Детекция, 106 точек, вектор личности, генерация и разбор лица на области считаются на
+          каждом кадре с вебки, а результат уходит в OBS отдельным чистым окном. Ни плагина, ни
+          виртуальной камеры, ставить в OBS ничего не нужно.
+        </p>
+      </div>
+      <aside class="p-aside">
+        <span class="pill"><span class="dot"></span>Работает · ~100 мс от камеры до эфира</span>
+        <ul class="p-facts">
+          <li>Написано на C++17 со счётом на видеокарте — это не обёртка вокруг Python</li>
+          <li>Задержка каждой стадии видна на ходу, поэтому у медленного кадра есть имя</li>
+          <li>На каждом кадре несъёмная отметка, что лицо сгенерировано</li>
+        </ul>
+      </aside>
+    </div>
+
+    <div class="metrics">
+      <div><div class="n">~100 мс</div><div class="k">от камеры до эфира — три кадра при 30 fps</div></div>
+      <div><div class="n">5</div><div class="k">моделей ONNX, около 770 МБ, живут в видеопамяти</div></div>
+      <div><div class="n">1280×720</div><div class="k">чистое окно вывода, OBS берёт его как любое другое</div></div>
+      <div><div class="n">C++17</div><div class="k">ONNX Runtime + CUDA, отрисовка на Direct3D 11</div></div>
+    </div>
+
+    <figure class="figure">
+      <video controls preload="metadata" playsinline poster="media/poster/live-face-mask.jpg">
+        <source src="media/video/live-face-mask.mp4" type="video/mp4">
+      </video>
+    </figure>
+    <p class="cap">
+      <span>Разбор, 30 с: поиск лица, 106 точек, подмена и передача картинки в OBS.</span>
+      <a href="media/video/live-face-mask.mp4">Открыть файл ↗</a>
+    </p>
+
+    <div class="card" style="margin-bottom:30px">
+      <h3>Надпись — не настройка</h3>
+      <p>
+        <strong>«AI-generated face effect»</strong> впечатана в каждый выходной кадр, и выключить
+        её нельзя. Подмена лица, которая прячет, что она подмена, — это другой инструмент для
+        другой задачи, и делать его я не стал.
+      </p>
+    </div>
+
+    <div class="p-foot">
+      <ul class="chips"><li>C++17 · CMake</li><li>ONNX Runtime</li><li>CUDA · cuDNN</li><li>Direct3D 11</li><li>Dear ImGui</li><li>Media Foundation</li></ul>
+      <a class="deep" href="projects/live-face-mask.ru.md">Конвейер, ползунки и пределы →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 04 БОТ ============ -->
+<section class="section project" id="bot" data-accent="bot">
+  <div class="wrap">
+    <div class="p-head">
+      <div>
+        <div class="p-num">04 — AI TELEGRAM-БОТ</div>
+        <h2>Одно окно чата,<br>восемнадцать моделей за ним.</h2>
+        <p class="p-sub">
+          Выбирать специализацию не нужно и команды учить не нужно. Пришлите фото, голосовое,
+          таблицу или ссылку — задачу возьмёт подходящая модель, в том числе когда тема посреди
+          разговора ушла в сторону и вернулась обратно.
+        </p>
+      </div>
+      <aside class="p-aside">
+        <span class="pill"><span class="dot"></span>Работает у пользователей · есть платящие</span>
+        <ul class="p-facts">
+          <li>Делает настоящие <code>.pptx</code> и курсовые <code>.docx</code> по 11 стандартам оформления</li>
+          <li>Пишет индикаторы для 7 платформ, студии <code>.jar</code> компилирует на сервере</li>
+          <li>Только официальные API — ни куки, ни session-токенов, ничего блокируемого</li>
+        </ul>
+      </aside>
+    </div>
+
+    <div class="metrics">
+      <div><div class="n">18</div><div class="k">моделей, выбор под конкретный вопрос — автоматический</div></div>
+      <div><div class="n">312</div><div class="k">тестов, отдельный набор — только про ошибки в ценах</div></div>
+      <div><div class="n">7</div><div class="k">торговых платформ, под которые он пишет индикаторы</div></div>
+      <div><div class="n">3</div><div class="k">языка интерфейса: русский, английский, украинский</div></div>
+    </div>
+
+    <div class="cols" style="margin-bottom:30px">
+      <div class="card">
+        <h3>Что ему на самом деле присылают</h3>
+        <p>Фото, скриншоты и сканы. Голосовые — сразу модели, без промежуточной расшифровки.
+        Видео и GIF. PDF, docx, xlsx, csv и файлы с кодом целиком, вместе с таблицами. Просто
+        ссылку, которую он прочитает прежде, чем ответить.</p>
+      </div>
+      <div class="card">
+        <h3>Нет ключа — функция скрыта</h3>
+        <p>Бот стартует с одним ключом провайдера, хватает бесплатного Gemini. Платформа без
+        ключа просто не появляется в меню — вместо того чтобы появиться и сломаться. Кнопок,
+        которые выглядят живыми и ничего не делают, нет.</p>
+      </div>
+    </div>
+
+    <div class="p-foot">
+      <ul class="chips"><li>Python · aiogram</li><li>PostgreSQL · Alembic</li><li>Docker Compose</li><li>Слоистая архитектура</li></ul>
+      <a class="deep" href="projects/ai-telegram-bot.ru.md">Все возможности и слои →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ КАК ============ -->
+<section class="section">
+  <div class="wrap">
+    <p class="eyebrow">Как это делалось</p>
+    <div class="cols">
+      <div class="card">
+        <h3>Почему здесь нет исходного кода</h3>
+        <p>Это продукты, а не учебные задачи. Два из них приносят деньги, один работает с живым
+        торговым счётом, и каждый строился месяцами. Здесь показано, <strong>что сделано и что
+        оно работает</strong>; сам код остаётся закрытым.</p>
+        <p>Готов разобрать любую часть на созвоне, показать вживую или отдать отдельный модуль по
+        запросу.</p>
+      </div>
+      <div class="card">
+        <h3>Я работаю с ИИ-помощником и говорю об этом прямо</h3>
+        <p>Я придумываю продукт, решаю, как он должен себя вести, проверяю каждую сборку на
+        реальной работе и пишу реализацию вместе с ИИ. Требования, решения по устройству, приёмка
+        и отлов ошибок — мои; значительная часть набора кода — нет.</p>
+        <p>Что при этом я действительно умею: превращать смутную идею в точное задание, находить
+        случай, на котором всё ломается, и довести до состояния, когда человек пользуется этим
+        уже наутро.</p>
+      </div>
+    </div>
+
+    <div class="cols" style="margin-top:20px">
+      <div class="card">
+        <h3>Ничто не притворяется работающим</h3>
+        <p>Недоступное показано выключенным, причина рядом. Когда камера отдаёт не тот формат
+        пикселей, программа так и говорит, а не оставляет вас с низким fps без объяснений.</p>
+      </div>
+      <div class="card">
+        <h3>Честная цифра вместо красивой</h3>
+        <p>Задержка измерена, а не прикинута. Из двух цифр качества перевода здесь названа та,
+        что получена на отложенном наборе, а не более высокая — с набора, под который писались
+        правила.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ СВЯЗЬ ============ -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <p class="eyebrow">Связь</p>
+    <h2>Любой из продуктов готов показать вживую.</h2>
+    <p class="prose">Созвон на русском или английском. Если хотите увидеть что-то конкретное —
+    математику тиков, разбор задержки, тесты тарифов — скажите что именно, и я открою эту часть
+    на экране.</p>
+    <div class="links">
+      <a href="mailto:aleksandr.vzn@icloud.com">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+        <span><span class="t">Почта</span><br><span class="v">aleksandr.vzn@icloud.com</span></span>
+      </a>
+      <a href="https://t.me/s1804v">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 4.5 2.5 11l6 2.2L18 7l-7 8.3.6 5.2 3.1-3.6"/></svg>
+        <span><span class="t">Telegram</span><br><span class="v">@s1804v</span></span>
+      </a>
+      <a href="https://github.com/OVALLProjects">
+        <svg class="ic" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.5 3.17-1.18 3.17-1.18.63 1.59.23 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.43-2.69 5.4-5.25 5.69.41.36.78 1.06.78 2.15v3.18c0 .31.2.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></svg>
+        <span><span class="t">GitHub</span><br><span class="v">OVALLProjects</span></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>Александр Возный · Румыния / Украина</span>
+    <span>Каждый скриншот и ролик на этой странице сняты с работающего приложения.</span>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -151,19 +151,22 @@ Three habits visible in all four projects:
 
 ## What comes next
 
-Four products in production. The list keeps growing.
+A project appears on this page only once someone actually uses it — which is why there are four
+here rather than fourteen. All four are finished. What keeps growing is the list, and **the next
+products are already being built**.
 
 - **Complete, not in progress.** All four are built, tested and in real use — one on a live
   trading account every trading day, one with paying subscribers. None of them is a prototype
   waiting on a final feature.
-- **Further products in development.** More are being built now. They are added here on the
-  same terms as these four: running, measured, and shown from the real application.
+- **Further products in development.** More are being built now, and they reach this page on
+  the same terms as these four: running, measured, and shown from the real application. It
+  gains finished products, not announcements.
 - **Development continues after release.** Products that are used keep growing. The journal
   gains a new breakdown when a month of trading calls for one; the bot gains models as
   providers release them.
-- **What qualifies for this page.** A project is listed only once it is in real use by
-  someone. That is why there are four rather than fourteen, and why the number will rise
-  slowly.
+- **Where this is heading.** The next products are built the same way: a precise specification,
+  measured results, and a real user by the end of it. I am looking for a role where that pace
+  goes into a company's product rather than only my own.
 
 *Last updated: 25 September 2026. The commit history shows how often this repository changes.*
 

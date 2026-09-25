@@ -66,6 +66,8 @@ https://github.com/user-attachments/assets/a628b758-9aeb-4a88-9a93-1e32801685a7
 
 **[▶ Watch the full walkthrough](https://ovallprojects.github.io/portfolio/#interpreter)** · [Latency, quality and what is not done →](projects/ai-voice-interpreter.md)
 
+<img src="media/ai-voice-interpreter/01-window.png" width="49%"> <img src="media/ai-voice-interpreter/02-vocabulary.png" width="49%">
+
 ---
 
 ## 03 · Live Face Mask

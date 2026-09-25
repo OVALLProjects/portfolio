@@ -47,7 +47,7 @@ so the held-out number is the honest one.
 
 ![Settings before a call](../media/ai-voice-interpreter/01-window.png)
 
-*(Device lists fill in when the app is running; this shot was taken from the UI alone.)*
+*(Taken from the running app — the device lists are the ones it actually found.)*
 
 **Conversation** — your language and theirs, with a swap button between them. **You are /
 The other person is** sets grammatical gender: Russian marks the speaker's gender in almost
@@ -85,12 +85,41 @@ nothing.
 
 ---
 
+## Vocabulary — the words a translator must not improvise on
+
+![Vocabulary tab](../media/ai-voice-interpreter/02-vocabulary.png)
+
+A term is either **kept as is** — product names, tool names, anything that has no business
+being translated — or **translated one fixed way**, so the same word never comes out
+differently in the middle of a call. Each entry can be bound to a domain, carry its
+inflected forms, and fire only when certain words are nearby: *Python* is the language next
+to *code* or *script*, and the snake everywhere else. Import and export are JSON and CSV, so
+a glossary can be prepared outside the app.
+
+*(The terms in the shot are made up for the screenshot.)*
+
+---
+
+## Setup and privacy
+
+![Setup and privacy tab](../media/ai-voice-interpreter/03-privacy.png)
+
+The **audio routing check** takes about eight seconds: it sends test tones into the virtual
+cable and a beep into the headphones, and tells you which leg of the route is wrong instead
+of leaving you in silence during the call.
+
+Privacy is a set of switches, all off unless turned on: audio is not written to disk, the
+transcript stays in memory, the local engine sends nothing over the network, and voice
+cloning requires explicit consent and can be deleted. **Delete history** removes everything
+at once.
+
+---
+
 ## Also in it
 
-Personal dictionary with import/export (JSON, CSV) · conversation memory and speaker profile,
-in memory only, never written to disk · Natural / Literal styles locally · minute and
-character accounting with Free / Pro / Business tiers · a developer panel with per-stage
-latency, quality metrics and a phrase breakdown.
+Conversation memory and speaker profile, in memory only, never written to disk · Natural /
+Literal styles locally · minute and character accounting with Free / Pro / Business tiers ·
+a developer panel with per-stage latency, quality metrics and a phrase breakdown.
 
 Privacy: the whole pipeline — recognition, translation, synthesis — runs locally on the
 machine. Cloud models are optional and off by default.
